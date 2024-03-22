@@ -70,3 +70,5 @@ class Playlist
   end
 
 end
+
+#new_instance = Playlist.new
