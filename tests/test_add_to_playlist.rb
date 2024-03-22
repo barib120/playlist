@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative '../playlist/add_to_playlist'
+require_relative '../add_to_playlist'
 require 'stringio'
 class Test_add_song < Minitest::Test
   def test_add_song
