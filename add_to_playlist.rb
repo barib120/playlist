@@ -43,7 +43,7 @@ class Playlist
   def see_songs
 
     puts "Your songs"
-    break
+    
 
     @songs.each do |song|
 

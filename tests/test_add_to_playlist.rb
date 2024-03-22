@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require './add_to_playlist'
-
+require 'stringio'
 class Test_add_song < Minitest::Test
   def test_user_input
     simulated_user_input = StringIO.new("your input here\n")
