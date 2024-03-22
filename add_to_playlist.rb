@@ -30,7 +30,7 @@ class Playlist
       when 3
 
         puts "See you next time"
-
+        Exit
       else 
 
         puts "That does not work. You need to choose option 1, 2, or 3."
@@ -56,13 +56,17 @@ class Playlist
   def add_song
     puts "Enter the name of the song"
 
-    song = gets.chomp
+    song_name = gets.chomp
 
     puts "Enter the name of the song artist"
 
+    artist = gets.chomp
+    
     @songs << Song.new(song_name, artist)
 
     puts "Song added"
+
+    
   end
 
 end
