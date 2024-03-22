@@ -1,8 +1,9 @@
-require 'minitest/autorun'
+#require 'minitest/autorun'
+require 'test/unit'
 require_relative '../add_to_playlist'
 require 'stringio'
 
-class Test_add_song < Minitest::Test
+class Test_add_song < Test::Unit::TestCase
   def test_add_song
   input = "Eternal Sunshine\nAriana Grande\n"
   expected_output = "Song added\n"
