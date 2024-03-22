@@ -11,6 +11,6 @@ class Song
 
   def to_s
 
-    "#{song_name} by #{artist}
+    "#{song_name} by #{artist}"
   end
 end
