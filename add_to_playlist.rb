@@ -14,7 +14,55 @@ class Playlist
 
       puts "What do you want to do?"
       puts "1. See your playlist"
-      puts "2. Add to yout play list"
+      puts "2. Add to your play list"
       puts "3. Exit"
 
       option = gets.chomp.to_i
+      case option
+
+      when 1
+        see_songs
+      
+      when 2
+
+        add_song
+
+      when 3
+
+        puts "See you next time"
+
+      else 
+
+        puts "That does not work. You need to choose option 1, 2, or 3."
+
+      end
+    
+    end
+  end
+
+  def see_songs
+
+    puts "Your songs"
+    break
+
+    @songs.each do |song|
+
+      puts song
+
+    end
+
+  end
+
+  def add_song
+    puts "Enter the name of the song"
+
+    song = gets.chomp
+
+    puts "Enter the name of the song artist"
+
+    @songs << Song.new(song_name, artist)
+
+    puts "Song added"
+  end
+
+end
